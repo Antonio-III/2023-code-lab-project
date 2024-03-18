@@ -1,2 +1,2 @@
-# code-lab-ii-currency-converter-24
+# Read me
 The app will not work unless you input your own api key 
