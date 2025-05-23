@@ -1,11 +1,11 @@
 import tkinter as tk
 from tkinter import messagebox
 from PIL import ImageTk,Image
-import api_key
-from api_key import base_rates, mod_rates
+from api_key import client, mod_rates
+
 class App(tk.Tk):
     # api data
-    client=api_key.client
+    client=client
     
     
     # colors
