@@ -1,11 +1,11 @@
 import requests
 import freecurrencyapi
 
-# uncomment what is commented to test this file (mind the indentation)
+API_KEY = ""
 
-client=freecurrencyapi.Client("INSERT_YOUR_OWN_API_KEY")
+client=freecurrencyapi.Client(API_KEY)
 
-# latest=client.latest()
+latest=client.latest()
 
 def mod_rates(latest,target_currency,input_amount):
     modified={}
@@ -32,5 +32,5 @@ if __name__ =="__main__":
     amount=int(input(f"With how much {currency} would you like to see exchange rates of?\n"))
 
     print(f"{amount} {currency} is equal to: \n")
-    # print(mod_rates(latest,currency,amount))
+    print(mod_rates(latest,currency,amount))
 
